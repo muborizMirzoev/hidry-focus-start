@@ -12,36 +12,310 @@
 </head>
 
 <body>
-  <header class="header container">
-    <a href="#" class="header__logo">
-      <svg class="logo">
-        <use xlink:href="./img/icons.svg#logo"></use>
-      </svg>
-    </a>
-    <div class="header__catalog">
-      <div class="header__catalog-burger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <p class="header__catalog-text">Каталог</p>
-    </div>
-    <div class="search-wrapper">
-      <input class="search-wrapper__search" type="text" placeholder="Поиск">
-      <button class="search-wrapper__btn">Найти</button>
-    </div>
-    <nav class="header__nav">
-      <a href="#">
-        <svg class="nav-icon bonus">
-          <use xlink:href="./img/icons.svg#bonus"></use>
-        </svg>
-        <p>Бонусы</p>
+  <header class="header">
+    <div class="header__wrapper container">
+      <a href="#" class="header__logo">
+        <img  class="logo" src="./img/logo.svg" alt="logo" >
       </a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-    </nav>
+      <div class="header__catalog">
+        <div class="header__catalog-burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class="header__catalog-text">Каталог</p>
+      </div>
+      <div class="search-wrapper">
+        <input class="search-wrapper__search" type="text" placeholder="Поиск">
+        <button class="search-wrapper__btn">Найти</button>
+      </div>
+      <nav class="header__nav">
+        <a href="#">
+          <svg class="nav-icon bonus">
+            <use xlink:href="./img/icons.svg#bonus"></use>
+          </svg>
+          <p>Бонусы</p>
+        </a>
+        <a href="#">
+          <svg class="nav-icon order">
+            <use xlink:href="./img/icons.svg#order"></use>
+          </svg>
+          <p>Заказы</p>
+        </a>
+        <a href="#">
+          <svg class="nav-icon shares">
+            <use xlink:href="./img/icons.svg#shares"></use>
+          </svg>
+          <p>Акции</p>
+        </a>
+        <a href="#">
+          <svg class="nav-icon cart">
+            <use xlink:href="./img/icons.svg#cart"></use>
+          </svg>
+          <p>Корзина (<span>5</span>)</p>
+        </a>
+      </nav>
+      <div class="nav__burger">
+        <div class="nav__burger-wrapper">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   </header>
+
+  <main class="main">
+    <div class="main__top-block top-block">
+      <div class="top-block-wrapper container">
+        <div class="top-block__bread-crumbs">
+          <a href="#">Каталог товаров</a>
+          <a href="#">/ Собачки</a>
+        </div>
+        <h1>Собачки</h1>
+      </div>
+    </div>
+    <a href="#" class="filter__hidden container">
+      <img src="./img/filter.svg" alt="filter">
+      <span>Фильтр</span>
+    </a>
+    <div class="main__content container grid">
+
+
+      <aside class="main__filter filter">
+        <p class="filter__header">Фильтр</p>
+        <div class="filter__item">
+          <div class="filter__item-wrapper">
+            <div class="filter__item-header">
+              <p>Тип</p>
+              <img src="./img/Arrow.svg" alt="arrow">
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="1">
+              <label class="checkbox__label" for="1">
+                <div></div>
+                <p>Охотничьи</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="2">
+              <label class="checkbox__label" for="2">
+                <div></div>
+                <p>Компаньоны</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="3">
+              <label class="checkbox__label" for="3">
+                <div></div>
+                <p>Декоративные</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="4">
+              <label class="checkbox__label" for="4">
+                <div></div>
+                <p>Служебные</p>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter__item">
+          <div class="filter__item-wrapper">
+            <div class="filter__item-header">
+              <p>Основные черты</p>
+              <img src="./img/Arrow.svg" alt="arrow">
+            </div>
+              <input class="filter__item-search" type="text" placeholder="Быстрый поиск">
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="5">
+              <label class="checkbox__label" for="5">
+                <div></div>
+                <p>Отсутствует чувство страха</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="6">
+              <label class="checkbox__label" for="6">
+                <div></div>
+                <p>Мало линяет</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="7">
+              <label class="checkbox__label" for="7">
+                <div></div>
+                <p>Отличное здоровье</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="8">
+              <label class="checkbox__label" for="8">
+                <div></div>
+                <p>Хорошее послушани</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="9">
+              <label class="checkbox__label" for="9">
+                <div></div>
+                <p>Очень преданная</p>
+              </label>
+            </div>
+            <a href="#" class="filter__show-more">Показать еще</a>
+          </div>
+        </div>
+
+        <div class="filter__size">
+          <div class="filter__item-wrapper">
+            <div class="filter__item-header">
+              <p>Размер</p>
+              <img src="./img/Arrow.svg" alt="arrow">
+            </div>
+            <div class="filter__item-size">
+              <span>от</span>
+              <label>
+                <input type="text" value="22">
+              </label>
+              <span>до</span>
+              <label>
+                <input type="text" value="11">
+              </label>
+            </div>
+        </div>
+      </aside>
+
+      <section class="section">
+        <div class="section__wrapper">
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+          <div class="section__item">
+            <div class="section__item-img">
+              <img src="./img/aynu.png" alt="aynu">
+            </div>
+            <div class="section__item-info">
+              <p  class="section__item-name">Айну</p>
+              <p class="section__item-price">12 000₽</p>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="section__bottom">
+          <a href="#" class="section__show-more">Показать ещё</a>
+        </div>
+      </section>
+    </div>
+
+  </main>
 </body>
 
 </html>
