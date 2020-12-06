@@ -19,9 +19,7 @@
       </a>
       <div class="header__catalog">
         <div class="header__catalog-burger">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="header__catalog-burger-item"></div>
         </div>
         <p class="header__catalog-text">Каталог</p>
       </div>
@@ -55,11 +53,9 @@
           <p>Корзина (<span>5</span>)</p>
         </a>
       </nav>
-      <div class="nav__burger">
-        <div class="nav__burger-wrapper">
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="nav__burger-wrapper">
+        <div class="nav__burger">
+          <div class="nav__burger-item"></div>
         </div>
       </div>
     </div>
@@ -69,21 +65,27 @@
     <div class="main__top-block top-block">
       <div class="top-block-wrapper container">
         <div class="top-block__bread-crumbs">
-          <a href="#">Каталог товаров</a>
-          <a href="#">/ Собачки</a>
+          <a href="#">Каталог товаров </a>
+          <a href="#"> Собачки</a>
         </div>
         <h1>Собачки</h1>
       </div>
+      <div class="main__catalog-open">
+        <a class="dog" href="#">Собачки</a>
+        <a class="cat" href="#">Котики</a>
+      </div>
     </div>
+
     <a href="#" class="filter__hidden container">
       <img src="./img/filter.svg" alt="filter">
       <span>Фильтр</span>
     </a>
     <div class="main__content container">
-
-
       <aside class="main__filter filter">
-        <p class="filter__header">Фильтр</p>
+        <div class="filter__header">
+          <img src="./img/filter-header.svg" alt="back">
+          <p>Фильтр</p>
+        </div>
         <div class="filter__item">
           <div class="filter__item-wrapper">
             <div class="filter__item-header">
@@ -314,8 +316,119 @@
         </div>
       </section>
     </div>
-
   </main>
+
+  <div class="filter-dropdown__blackout">
+    <section class="filter-dropdown">
+      <div class="filter__header">
+        <a href="#">
+          <img src="./img/filter-header.svg" alt="back">
+        </a>
+        <p>Фильтр</p>
+      </div>        
+        <div class="filter__item">
+          <div class="filter__item-wrapper">
+            <div class="filter__item-header">
+              <p>Тип</p>
+              <img src="./img/Arrow.svg" alt="arrow">
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-1">
+              <label class="checkbox__label" for="dropdown-1">
+                <div></div>
+                <p>Охотничьи</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-2">
+              <label class="checkbox__label" for="dropdown-2">
+                <div></div>
+                <p>Компаньоны</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-3">
+              <label class="checkbox__label" for="dropdown-3">
+                <div></div>
+                <p>Декоративные</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-4">
+              <label class="checkbox__label" for="dropdown-4">
+                <div></div>
+                <p>Служебные</p>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter__item">
+          <div class="filter__item-wrapper">
+            <div class="filter__item-header">
+              <p>Основные черты</p>
+              <img src="./img/Arrow.svg" alt="arrow">
+            </div>
+              <input class="filter__item-search" type="text" placeholder="Быстрый поиск">
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-5">
+              <label class="checkbox__label" for="dropdown-5">
+                <div></div>
+                <p>Отсутствует чувство страха</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-6">
+              <label class="checkbox__label" for="dropdown-6">
+                <div></div>
+                <p>Мало линяет</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-7">
+              <label class="checkbox__label" for="dropdown-7">
+                <div></div>
+                <p>Отличное здоровье</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-8">
+              <label class="checkbox__label" for="dropdown-8">
+                <div></div>
+                <p>Хорошее послушани</p>
+              </label>
+            </div>
+            <div class="filter__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" id="dropdown-9">
+              <label class="checkbox__label" for="dropdown-9">
+                <div></div>
+                <p>Очень преданная</p>
+              </label>
+            </div>
+            <a href="#" class="filter__show-more">Показать еще</a>
+          </div>
+        </div>
+
+        <div class="filter__size">
+          <div class="filter__item-wrapper">
+            <div class="filter__item-header">
+              <p>Размер</p>
+              <img src="./img/Arrow.svg" alt="arrow">
+            </div>
+            <div class="filter__item-size">
+              <span>от</span>
+              <label>
+                <input type="text" value="22">
+              </label>
+              <span>до</span>
+              <label>
+                <input type="text" value="11">
+              </label>
+            </div>
+        </div>
+    </section>
+  </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
