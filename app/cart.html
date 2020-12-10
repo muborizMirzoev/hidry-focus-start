@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/cart.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Cart</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper container">
+      <a href="#" class="header__logo">
+        <img  class="logo" src="./assets/img/logo.svg" alt="logo" >
+      </a>
+      <div class="header__catalog">
+        <div class="header__catalog-burger">
+          <div class="header__catalog-burger-item"></div>
+        </div>
+        <p class="header__catalog-text">Каталог</p>
+      </div>
+      <div class="search-wrapper">
+        <input class="search-wrapper__search" type="text" placeholder="Поиск">
+        <button class="search-wrapper__btn">Найти</button>
+      </div>
+      <nav class="header__nav">
+        <a href="#">
+          <svg class="nav-icon bonus">
+            <use xlink:href="./assets/img/icons.svg#bonus"></use>
+          </svg>
+          <p>Бонусы</p>
+        </a>
+        <a href="#">
+          <svg class="nav-icon order">
+            <use xlink:href="./assets/img/icons.svg#order"></use>
+          </svg>
+          <p>Заказы</p>
+        </a>
+        <a href="#">
+          <svg class="nav-icon shares">
+            <use xlink:href="./assets/img/icons.svg#shares"></use>
+          </svg>
+          <p>Акции</p>
+        </a>
+        <a href="#">
+          <svg class="nav-icon">
+            <use xlink:href="./assets/img/icons.svg#cart"></use>
+          </svg>
+          <p>Корзина (<span>5</span>)</p>
+        </a>
+      </nav>
+      <div class="nav__burger-wrapper">
+        <div class="nav__burger">
+          <div class="nav__burger-item"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__top-block top-block">
+      <div class="top-block-wrapper container">
+        <div class="top-block__bread-crumbs">
+          <a href="#">Каталог товаров </a>
+          <a href="#"> Собачки</a>
+          <a href="#"> Айну</a>
+        </div>
+        <h1>Айну</h1>
+      </div>
+      <div class="main__catalog-open">
+        <a class="dog" href="#">Собачки</a>
+        <a class="cat" href="#">Котики</a>
+      </div>
+    </div>
+
+
+    <div class="main-cart grid container">
+      <div class="main-cart__img">
+        <img src="./assets/img/aynu-cart.png" alt="aynu">
+      </div>
+      <div class="main-cart__text cart">
+        <h2>Характеристика Айну</h2>
+        <div class="cart__row">
+          <p class="cart__row-type">Тип</p>
+          <p class="cart__row-value">Охотничьи, Компаньоны</p>
+        </div>
+        <div class="cart__row">
+          <p class="cart__row-type">Размер</p>
+          <p class="cart__row-value">Средняя (11-25кг)</p>
+        </div>
+        <div class="cart__row">
+          <p class="cart__row-type">Основные черты</p>
+          <p class="cart__row-value">Очень преданная, Дружелюбная, 
+            Подходит для охоты, Мало лает</p>
+        </div>
+        <div class="cart__row">
+          <p class="cart__row-type">Частые заболевания</p>
+          <p class="cart__row-value">Глухота, Паралич гортани </p>
+        </div>
+        <div class="cart__row">
+          <p class="cart__row-type">Интеллект</p>
+          <p class="cart__row-value">45%</p>
+        </div>
+        <div class="main-cart__price">
+          <p class="main-cart__price-text">Стоимость</p>
+          <p class="main-cart__price-number">12 000₽</p>
+        </div>
+        <div class="main-cart__button">
+          <button class="btn__pick-up btn">Забрать</button>
+          <button class="btn__add-to-cart">Добавить в корзину</button>
+        </div>
+      </div>
+  </main>
+
+    <!-- Корзина -->
+    <div class="basket">
+      <div class="basket__header">
+        <p>Ваша корзина</p>
+        <a class="basket__header-close" href="#">
+          <img  src="./assets/img/basket-close.svg" alt="close">
+        </a>
+      </div>
+      <div class="basket__selectAll">
+        <div class="basket__selectAll-checkbox checkbox">
+          <input class="checkbox__input" type="checkbox" id="bAll">
+          <label class="checkbox__label" for="bAll">
+            <div></div>
+            <p>Выбрать всё</p>
+          </label>
+        </div>
+        <div class="basket__deleteAll">
+          <p>Удалить всё</p>
+          <a href="#">
+            <img src="./assets/img/delete.svg" alt="delete">
+          </a>
+        </div>
+      </div>
+      <div class="basket__item">
+        <div class="basket__item-checkbox checkbox">
+          <input class="checkbox__input" type="checkbox" id="b1">
+          <label class="checkbox__label" for="b1">
+            <div></div>
+          </label>
+        </div>
+        <img class="basket__item-img" src="./assets/img/aynu-cart.png" alt="dog">
+        <p class="item__name">Айну</p>
+        <div class="basket__item-quantity quantity">
+            <button class="quantity__btn quantity__btn-down">-</button>
+            <span class="quantity__number">1</span>
+            <button class="quantity__btn quantity__btn-up">+</button>
+        </div>
+        <span class="item__price">12 000₽</span>
+        <a class="item__delete" href="#">
+          <img src="./assets/img/delete.svg" alt="delete">
+        </a>
+      </div>
+      <div class="basket__item">
+        <div class="basket__item-checkbox checkbox">
+          <input class="checkbox__input" type="checkbox" id="b2">
+          <label class="checkbox__label" for="b2">
+            <div></div>
+          </label>
+        </div>
+        <img class="basket__item-img" src="./assets/img/aynu-cart.png" alt="dog">
+        <p class="item__name">Афганская борзая</p>
+        <div class="basket__item-quantity quantity">
+            <button class="quantity__btn quantity__btn-down">-</button>
+            <span class="quantity__number">1</span>
+            <button class="quantity__btn quantity__btn-up">+</button>
+        </div>
+        <span class="item__price">15 000₽</span>
+        <a class="item__delete" href="#">
+          <img src="./assets/img/delete.svg" alt="delete">
+        </a>
+      </div>
+      <div class="basker__footer">
+        <p class="basker__footer-amount">  
+            <span class="basket__footer-quantity">2</span> товара на сумму
+            <span class="basket__footer-summa">27 000₽</span>
+        </p>
+        <button class="basker__footer-btn btn">Оформить заказ</button>
+      </div>
+    </div>
+  <script src="./js/burger.js"></script>
+</body>
+</html>
