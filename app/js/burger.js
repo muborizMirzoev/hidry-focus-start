@@ -28,10 +28,5 @@ navBurger.addEventListener('click', () => {
     }
 });
 
-// // filter
-// const filter = document.querySelector('.filter');
-// const filterHidden = document.querySelector('.filter__hidden');
 
-// filterHidden.addEventListener('click', () => {
 
-// });
